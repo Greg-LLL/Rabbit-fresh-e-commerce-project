@@ -13,10 +13,10 @@ export default createStore({
     user
   },
   // 配置插件
-  plugins:[createPersistedstate({
+  plugins: [createPersistedstate({
     // 本地存储的名字
-    key:'eRabbit-client-pc-124-store',
+    key: 'eRabbit-client-pc-124-store',
     // 指定需要存储的模块
-    paths:['user','cart']
+    paths: ['user', 'cart']
   })]
 })

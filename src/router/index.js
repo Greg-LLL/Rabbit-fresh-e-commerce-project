@@ -1,6 +1,20 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+const Layout = () => import('@/views/LayoutView')
+const Home = () => import('@/views/home')
 
-const routes = []
+// 路由规则
+const routes = [
+  {
+    path: '/',
+    component: Layout,
+    children: [
+      {
+        path: '/',
+        component: Home
+      }
+    ]
+  }
+]
 
 const router = createRouter({
   history: createWebHashHistory(),
