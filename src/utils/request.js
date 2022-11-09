@@ -8,7 +8,7 @@ import router from '@/router'
 // 4. 导出一个函数，调用当前的axsio实例发请求，返回值promise
 
 // 导出基准地址，原因：其他地方不是通过axios发请求的地方用上基准地址
-export const baseURL = 'http://pcapi-xiaotuxian-front-devtest.itheima.net/'
+export const baseURL = 'http://pcapi-xiaotuxian-front-devtest.itheima.net'
 const instance = axios.create({
   baseURL,
   timeout: 5000
@@ -50,7 +50,7 @@ instance.interceptors.response.use(res => res.data, err => {
   return Promise.reject(err)
 })
 
-export default (method, url, submitData) => {
+export default (url, method,submitData) => {
   return instance({
     method,
     url,
