@@ -6,6 +6,7 @@
         <HomeCategory />
 
         <!-- 轮播图 -->
+        <HomeBanner/>
       </div>
     </div>
   </div>
@@ -13,10 +14,12 @@
 
 <script>
 import HomeCategory from "@/views/home/components/home-category.vue"
+import HomeBanner from './components/home-banner.vue'
 export default {
   name: 'HomePage',
   components:{
     HomeCategory,
+    HomeBanner,
   }
 
 }
@@ -24,8 +27,6 @@ export default {
 
 <style lang="less" scoped>
 .container{
-    height: 800px;
-    .hoverShadow;
     color: @xtxColor;
 }
 </style>>

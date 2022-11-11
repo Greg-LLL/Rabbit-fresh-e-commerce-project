@@ -7,9 +7,5 @@ export default {
 }
 </script>
 <style scoped lang="less">
-.main{
-  height: 800px;
-  margin: 0 250px;
-}
 
 </style>
